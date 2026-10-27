@@ -46,21 +46,22 @@
 user = input("enter answer (rock, paper, scissors): ")
 import random
 computer = random.choice(["rock", "paper", "scissors"])
-print("computer chose: ", computer)
+print("computer choice: ", computer)
 if user == computer:
     print("It's a tie!")
-    el
+else:
     if user == "rock" and computer == "rock":
      print("rock ties with rock")
     if user == "paper" and computer == "paper":
         print("paper ties with paper")
-        if user == "scissors" and computer == "scissors":
-            print("scissors ties with scissors")
-            if user == "rock" and computer == "scissors": print("rock wins against scissors")
-            if user == " rock" and computer == "paper":
-                print("rock loses to paper")
-                if user == "paper" and computer == "rock":
-                    print("paper wins against rock")
+
+if user == "scissors" and computer == "scissors":
+  print("scissors ties with scissors")
+if user == "rock" and computer == "scissors": print("rock wins against scissors")
+if user == " rock" and computer == "paper":
+ print("rock loses to paper")
+if user == "paper" and computer == "rock":
+ print("paper wins against rock")
 if user == "paper":   
     print("rock loses to paper")
 
